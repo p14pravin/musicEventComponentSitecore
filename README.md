@@ -18,9 +18,9 @@ Music-Event-App-Assignment/
 
 
 - `frontend/` → Contains the frontend code (Next.js / React, etc.).  
-  - See [frontend/nextjs/README.md](./frontend/README.md) for setup and usage instructions.  
+  - See [frontend/nextjs/README.md](./frontend/nextjs/README.md) for setup and usage instructions.  
   
 - `backend/` → Contains the backend code (.NET / API, etc.).  
-  - See [backend/TicketService/README.md](./backend/README.md) for setup and usage instructions.  
+  - See [backend/TicketService/README.md](./backend/TicketService/README.md) for setup and usage instructions.  
 
 Each folder has its own `README.md` file with detailed instructions.
