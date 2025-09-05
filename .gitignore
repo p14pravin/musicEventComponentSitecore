@@ -1,0 +1,89 @@
+# ===============================
+# Global ignores
+# ===============================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+.env
+.env.local
+.env.*.local
+.vscode/
+.idea/
+node_modules/
+
+# ===============================
+# Backend (.NET / C#)
+# ===============================
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.dbmdl
+*.bak
+*.ldf
+*.ndf
+*.mdf
+*.log
+*.snk
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+
+# dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+TestResult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# ===============================
+# Frontend (Next.js / Sitecore JSS)
+# ===============================
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.pnp.js
+.cache/
+.eslintcache
+.stylelintcache
+
+# Storybook
+storybook-static/
+
+# ===============================
+# Sitecore JSS specific
+# ===============================
+.sitecore/
+.scjssconfig
+/sitecore/definitions/config
+
+# ===============================
+# Misc
+# ===============================
+*.tgz
+*.tar.gz
+*.zip
+*.7z
+*.rar

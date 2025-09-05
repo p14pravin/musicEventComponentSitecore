@@ -1,0 +1,60 @@
+# in order to demonstrate translation on the Styleguide page, we need to have a stub on the homepage for that language.
+# this can be deleted safely if not using multiple languages.
+name: home
+id: home-page
+fields:
+  pageTitle: लाइव म्यूजिक इवेंट
+# Define the page layout starting at the root placeholder - in this case, 'jss-main'
+# root placeholder names are defined in the package.json config section (required for Sitecore deployment)
+placeholders:
+  jss-main:
+    - componentName: HeroBanner
+      fields:
+        heading: लाइव म्यूजिक इवेंट
+        description: हमारा संगीत कार्यक्रम लाइव है। टिकट नीचे हैं, अभी खरीदें।
+        image:
+          src: /data/media/img/event-heroBanner.png
+          alt: Hero Banner Image
+
+    - componentName: MusicEventSection
+      fields:
+        heading: आगामी कार्यक्रम
+
+      params:
+        layoutMode: "2"   #  select 3 columns or 2 column
+
+      placeholders:
+        col1:
+          - componentName: EventInfo
+            fields:
+              image: 
+                src: /data/media/img/event.jpg
+                alt: Event Image
+              heading: "Music Festivalसंगीत समारोह"
+              description: "<p>लाइव रॉक संगीत की एक शाम का अनुभव करें।</p>"
+              genre: "Rock"
+              date: "5 नवंबर, 2025"
+
+        col2:
+          - componentName: AddressInfo
+            fields:
+              heading1: पता
+              address: "<p>123 मेन सेंट एनीटाउन, यूएसए</p>"
+              heading2: संपर्क
+              contact: (123) 456-7890
+        col3:
+          - componentName: MapInfo
+            fields:
+              heading: स्थान
+              image:
+                src: /data/media/img/Google-Maps.jpg
+                alt: location image
+
+    - componentName: TicketCounter
+      fields:
+        eventID: 101
+        description: उपलब्ध टिकट
+        soldOut: सोल्ड आऊट
+        buyNow: अभी खरीदे 
+
+          

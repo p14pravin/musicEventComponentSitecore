@@ -1,0 +1,19 @@
+ticketCounter.jsx
+import { Text, Field, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentProps } from 'lib/component-props';
+import { JSX } from 'react';
+
+type TicketCounterProps = ComponentProps & {
+  fields: {
+    eventID: Field<string>;
+  };
+};
+
+const TicketCounter = (props: TicketCounterProps): JSX.Element => (
+  <div className=" event-info p-4 mt-2 shadow rounded bg-white">
+    <p>TicketCounter Component</p>
+    <Text field={props.fields.eventID} />
+  </div>
+);
+
+export default withDatasourceCheck()<TicketCounterProps>(TicketCounter);
